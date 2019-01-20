@@ -1,8 +1,9 @@
 name: flutter_mmkv_cache
-description: A new flutter plugin project.
+description: A cache for Flutter project implement it with mmkv framework.
 version: 0.0.1
-author:
-homepage:
+author: bang88 <sqibang@gmail.com>
+homepage: https://github.com/bang88/flutter_mmkv_cache
+
 
 environment:
   sdk: ">=2.1.0 <3.0.0"

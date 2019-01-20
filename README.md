@@ -1,14 +1,36 @@
 # flutter_mmkv_cache
 
-A new flutter plugin project.
+[![pub package](https://img.shields.io/pub/v/flutter_mmkv_cache.svg)](https://pub.dartlang.org/packages/flutter_mmkv_cache)
+
+> A cache for Flutter project implement it with mmkv framework. and support expires
+
 
 ## Getting Started
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.io/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+```yaml
+dependencies:
+  flutter_mmkv_cache: ^0.0.1
+```
+
+### Usage
+
+```dart
+import 'package:flutter_mmkv_cache/flutter_mmkv_cache.dart';
+
+/// https://github.com/OpenFlutter/mmkv_flutter
+
+/// ExpiredCache
+
+/// add value to cache will expired in 1 hour
+final boolRes = await ExpiredCache.add('key', 'value', expired: 1  );
+
+/// get value from cache
+final value = await ExpiredCache.get('key');
+
+```
+
+
+### Licenses
+
+Original License https://github.com/OpenFlutter/mmkv_flutter
