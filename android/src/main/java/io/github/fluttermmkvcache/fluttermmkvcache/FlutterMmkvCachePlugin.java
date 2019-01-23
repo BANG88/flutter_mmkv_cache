@@ -29,7 +29,7 @@ public class FlutterMmkvCachePlugin implements MethodCallHandler {
      * Plugin registration.
      */
     public static void registerWith(Registrar registrar) {
-        final MethodChannel channel = new MethodChannel(registrar.messenger(), "mmkv_flutter");
+        final MethodChannel channel = new MethodChannel(registrar.messenger(), "flutter_mmkv_cache");
         channel.setMethodCallHandler(new FlutterMmkvCachePlugin(registrar.context()));
 
     }

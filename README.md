@@ -10,7 +10,7 @@
 
 ```yaml
 dependencies:
-  flutter_mmkv_cache: ^0.0.1
+  flutter_mmkv_cache: ^0.0.2
 ```
 
 ### Usage
